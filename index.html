@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto APW - Melhorado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 50px 0;
+        }
+
+        header img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        nav ul {
+            list-style: none;
+            background-color: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .item {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Estilos para o formulário */
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .form-container input, 
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #555;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .item img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://blog.rocketseat.com.br/content/images/2024/02/htmlcssjs.png" alt="">
+        <h1>Projetos de Sistemas Web</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#item1">Sist. Web</a></li>
+            <li><a href="#item2">Benefícios</a></li>
+            <li><a href="#item3">Transformação</a></li>
+            <li><a href="#item4">Fases</a></li>
+            <li><a href="#item5">Boas Práticas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="item1" class="item">
+            <h2>Sistemas Web</h2>
+            <img src="https://uninga.br/wp-content/uploads/2023/11/sistem-inter.png" alt="">
+            <p>Um sistema web é apenas um software hospedado na internet. Ele traz inúmeros benefícios, como acessibilidade de qualquer dispositivo com navegador e internet.</p>
+        </section>
+
+        <section id="item2" class="item">
+            <h2>Benefícios dos Projetos de Sistemas Web</h2>
+            <img src="https://ribnet.com.br/wp-content/uploads/2021/09/banner02.jpg" alt="">
+            <p>Os projetos web são práticos, econômicos e personalizados, atendendo às necessidades específicas de cada organização.</p>
+        </section>
+
+        <section id="item3" class="item">
+            <h2>Transformação Digital e Competitividade</h2>
+            <img src="https://saitec.com.br/wp-content/uploads/2024/05/transformacao-digital-na-saude-1024x577.jpeg" alt="">
+            <p>A Transformação Digital traz agilidade e vantagem competitiva, ao incentivar a inovação e melhorar a experiência do cliente.</p>
+        </section>
+
+        <section id="item4" class="item">
+            <h2>Fases de um Projeto de Sistema Web</h2>
+            <img src="https://blog.mestresdaweb.io/files/810def602ab13f94d452-sistemaweb.webp" alt="">
+            <p>As fases incluem coleta de informações, planejamento, design, desenvolvimento de conteúdo, funcionalidade, teste, lançamento e monitoramento.</p>
+        </section>
+
+        <section id="item5" class="item">
+            <h2>Boas Práticas em Desenvolvimento Web</h2>
+            <img src="https://blog.dankicode.com/wp-content/uploads/2020/06/melhores-praticas-em-desenvolvimento-web-650x400.jpg" alt="">
+            <p>Seguir boas práticas no desenvolvimento web envolve ter processos definidos, entender expectativas do cliente e escolher as ferramentas corretas.</p>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <div class="form-container">
+            <h2>Contato</h2>
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2024 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
